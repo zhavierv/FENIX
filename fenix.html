@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Formación: Asesor Energético Fenix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-button.active .plus-icon {
+            transform: rotate(45deg);
+        }
+        .module-icon {
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800">Portal de Formación Dinámico</h1>
+            <p class="text-lg text-slate-600 mt-2">Asesor Energético Fenix</p>
+        </header>
+
+        <div id="accordion-container" class="space-y-4">
+
+            <!-- Módulo 1: Bienvenida y Nuestra Filosofía -->
+            <div class="bg-white rounded-lg shadow-md border border-gray-200">
+                <button class="accordion-button w-full text-left p-4 flex justify-between items-center text-xl font-semibold text-slate-700 hover:bg-gray-50 focus:outline-none">
+                    <div class="flex items-center">
+                        <svg class="module-icon w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-5.22-6.222h10.44M18 10.035l-6-4.667-6 4.667m12 4.137l-6 4.667-6-4.667"></path></svg>
+                        Módulo 1: Bienvenida y Nuestra Filosofía
+                    </div>
+                    <span class="plus-icon text-slate-500 text-2xl transition-transform duration-300 transform">+</span>
+                </button>
+                <div class="accordion-content px-6 pb-6">
+                    <div class="pt-4 border-t">
+                        <h3 class="text-lg font-bold text-indigo-700 mb-2">1.1 ¡Bienvenido/a al Equipo Fenix!</h3>
+                        <p class="mb-4">En Fenix, no somos un call center tradicional. Somos un centro de soluciones energéticas. Nuestro objetivo no es "vender por vender", sino optimizar la situación contractual de nuestros clientes, asegurando que siempre tengan las mejores condiciones del mercado.</p>
+                        <p class="font-semibold">Tú no eres un vendedor, eres un <strong class="text-indigo-700">Asesor Energético</strong>. Tu misión es informar, ayudar y solucionar.</p>
+                        <h3 class="text-lg font-bold text-indigo-700 mt-6 mb-2">1.2 La Metodología: De Vender un Servicio a Ofrecer una Solución</h3>
+                        <p class="mb-4">Nuestra estrategia se basa en un principio simple: <strong class="text-indigo-700">"Detectar un problema, presentar la solución"</strong>.</p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded">
+                                <h4 class="font-bold text-red-800">El Problema</h4>
+                                <p class="text-red-700">Un cliente está a punto de perder su tarifa con descuento. Esto significa que su próxima factura subirá considerablemente. ¡Él aún no lo sabe, pero nosotros sí!</p>
+                            </div>
+                            <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                                <h4 class="font-bold text-green-800">La Solución</h4>
+                                <p class="text-green-700">Tú. Como su gestoría energética, intervienes ANTES de que ocurra, renovando sus descuentos. Tu llamada es una <strong>alerta proactiva</strong> y una <strong>solución inmediata</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 2: El Flujo de la Llamada Consultiva -->
+            <div class="bg-white rounded-lg shadow-md border border-gray-200">
+                <button class="accordion-button w-full text-left p-4 flex justify-between items-center text-xl font-semibold text-slate-700 hover:bg-gray-50 focus:outline-none">
+                     <div class="flex items-center">
+                        <svg class="module-icon w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        Módulo 2: El Flujo de la Llamada Consultiva
+                    </div>
+                    <span class="plus-icon text-slate-500 text-2xl transition-transform duration-300 transform">+</span>
+                </button>
+                <div class="accordion-content px-6 pb-6">
+                    <div class="pt-4 border-t space-y-6">
+                         <!-- Pasos del flujo de llamada -->
+                         <div>
+                            <h4 class="font-bold text-indigo-700">Paso 1: El Abordaje de Confianza (Primeros 15 segundos)</h4>
+                            <blockquote class="mt-2 p-3 bg-gray-50 border-l-4 border-gray-300 text-gray-600 rounded-r-lg">
+                                *"¿Hola, el/la Sr./Sra. [Nombre del Cliente]? (Pausa)."*<br>
+                                *"Le habla [Tu Nombre], soy su asesor energético asignado de la gestoría. Le llamo referente al contrato de suministro que tiene en [Dirección del Cliente], ¿es correcta la dirección?"*<br>
+                                *"Perfecto. El motivo de mi llamada es para informarle de una notificación importante que hemos recibido sobre su tarifa."*
+                            </blockquote>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-indigo-700">Paso 2: La Creación de Urgencia (El Problema)</h4>
+                            <blockquote class="mt-2 p-3 bg-gray-50 border-l-4 border-gray-300 text-gray-600 rounded-r-lg">
+                                *"Le explico, Sr./Sra. [Apellido del Cliente]. Estamos monitoreando sus servicios y el sistema nos alerta que la promoción con la que ha estado ahorrando está a punto de finalizar este mes."*<br>
+                                *"Para que me entienda, si no lo gestionamos, su próxima factura reflejará el precio estándar sin descuentos, lo que supone una subida de aproximadamente un 20-25%. ¿Usted estaba al tanto de esto?"*
+                            </blockquote>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-indigo-700">Paso 3: La Presentación de la Solución (El Héroe)</h4>
+                            <blockquote class="mt-2 p-3 bg-gray-50 border-l-4 border-gray-300 text-gray-600 rounded-r-lg">
+                                *"No se preocupe, precisamente para eso le llamo. Mi trabajo es muy sencillo: vamos a renovar su promoción con los nuevos precios de este año con un **50% de descuento** en el término de energía."*<br>
+                                *"Además, le vamos a aplicar **un mes de consumo energético gratis** en su primera factura. La distribuidora es la misma de siempre, simplemente actualizamos la comercializadora, que este año es [Nombre de la Compañía], para poder aplicarle este beneficio."*
+                            </blockquote>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-indigo-700">Paso 4: Verificación y Cierre del Trámite</h4>
+                             <blockquote class="mt-2 p-3 bg-gray-50 border-l-4 border-gray-300 text-gray-600 rounded-r-lg">
+                                *"Para dejarle la gestión aplicada ahora mismo, solo necesito verificar un par de datos con usted. Es un trámite rápido..."* (Proceder con la verificación de DNI, email, y datos bancarios).
+                            </blockquote>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-indigo-700">Paso 5: Cierre y Próximos Pasos</h4>
+                             <blockquote class="mt-2 p-3 bg-gray-50 border-l-4 border-gray-300 text-gray-600 rounded-r-lg">
+                                *"¡Excelente! Ya está todo gestionado. Acabo de enviarle un SMS para que quede registrada la política de protección de datos y tenga una copia de las condiciones. Por favor, siga los pasos para validar la renovación."*<br>
+                                *"A partir de ahora, soy su gestor asignado. Ha sido un placer ayudarle."*
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 3: Manejo de Objeciones -->
+            <div class="bg-white rounded-lg shadow-md border border-gray-200">
+                <button class="accordion-button w-full text-left p-4 flex justify-between items-center text-xl font-semibold text-slate-700 hover:bg-gray-50 focus:outline-none">
+                    <div class="flex items-center">
+                       <svg class="module-icon w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        Módulo 3: Manejo de Objeciones Comunes
+                    </div>
+                    <span class="plus-icon text-slate-500 text-2xl transition-transform duration-300 transform">+</span>
+                </button>
+                <div class="accordion-content px-6 pb-6">
+                    <div class="pt-4 border-t space-y-4">
+                        <!-- Objeciones -->
+                        <div>
+                            <p class="font-semibold text-red-600">Objeción: "¿Y esto cuánto me cuesta?"</p>
+                            <p class="mt-1 text-gray-700 pl-4 border-l-2 border-gray-300"><strong>Respuesta:</strong> "Nada en absoluto. Al contrario, mi trabajo es asegurarme de que pague menos. Esta gestión es un servicio gratuito que ofrecemos para evitarles las subidas de precio por fin de promoción."</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-red-600">Objeción: "Tengo que pensarlo / consultarlo."</p>
+                            <p class="mt-1 text-gray-700 pl-4 border-l-2 border-gray-300"><strong>Respuesta:</strong> "Entiendo, pero permítame recordarle que no estamos contratando nada nuevo, sino evitando que su tarifa actual suba de precio. La promoción caduca en 48 horas y si no lo dejamos cerrado, la subida se aplicará automáticamente."</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-red-600">Objeción: "¿De qué empresa me llama? No la conozco."</p>
+                            <p class="mt-1 text-gray-700 pl-4 border-l-2 border-gray-300"><strong>Respuesta:</strong> "Le llamo de su gestoría energética. Nosotros trabajamos con diferentes comercializadoras para buscar siempre el mejor precio para usted. Este año, la mejor tarifa la ofrece [Nombre de la Compañía Actual], y por eso actualizamos su contrato con ellos."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Módulo 4: Conceptos Clave -->
+            <div class="bg-white rounded-lg shadow-md border border-gray-200">
+                <button class="accordion-button w-full text-left p-4 flex justify-between items-center text-xl font-semibold text-slate-700 hover:bg-gray-50 focus:outline-none">
+                    <div class="flex items-center">
+                        <svg class="module-icon w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        Módulo 4: Conceptos Energéticos Clave
+                    </div>
+                    <span class="plus-icon text-slate-500 text-2xl transition-transform duration-300 transform">+</span>
+                </button>
+                <div class="accordion-content px-6 pb-6">
+                     <div class="pt-4 border-t space-y-4">
+                        <!-- Conceptos -->
+                        <div>
+                            <h4 class="font-semibold">Distribuidora</h4>
+                            <p>La empresa dueña de los cables y contadores. <strong class="text-red-600">¡NUNCA cambia!</strong> Es la misma para todos en una zona. (Ej: Endesa Distribución, Iberdrola Distribución). Recalcarlo da seguridad.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Comercializadora</h4>
+                            <p>La empresa que vende la energía y emite la factura. <strong class="text-green-600">¡Esta es la que nosotros actualizamos para aplicar los descuentos!</strong> (Ej: Factor Energía, Enerluz, etc.).</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">CUPS</h4>
+                            <p>El "DNI" de tu suministro de luz o gas. Es un código único que identifica tu punto de instalación física.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 5: Herramientas y Conceptos Críticos -->
+            <div class="bg-white rounded-lg shadow-md border border-gray-200">
+                <button class="accordion-button w-full text-left p-4 flex justify-between items-center text-xl font-semibold text-slate-700 hover:bg-gray-50 focus:outline-none">
+                    <div class="flex items-center">
+                        <svg class="module-icon w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        Módulo 5: Herramientas y Conceptos Críticos
+                    </div>
+                    <span class="plus-icon text-slate-500 text-2xl transition-transform duration-300 transform">+</span>
+                </button>
+                <div class="accordion-content px-6 pb-6">
+                    <div class="pt-4 border-t space-y-6">
+                        <div>
+                            <h4 class="text-lg font-bold text-indigo-700 mb-2">5.1 Códigos de Entidades Bancarias</h4>
+                            <p class="mb-3">Estos 4 dígitos identifican al banco dentro del IBAN. Reconocerlos es clave.</p>
+                             <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 text-sm">
+                                <p><strong>2100</strong> - CaixaBank</p>
+                                <p><strong>0049</strong> - Banco Santander</p>
+                                <p><strong>0182</strong> - BBVA</p>
+                                <p><strong>0081</strong> - Banco Sabadell</p>
+                                <p><strong>0128</strong> - Bankinter</p>
+                                <p><strong>2103</strong> - Unicaja Banco</p>
+                                <p><strong>1465</strong> - ING Bank</p>
+                                <p><strong>2085</strong> - Ibercaja Banco</p>
+                                <p><strong>2095</strong> - Kutxabank</p>
+                                <p><strong>0239</strong> - EVO Banco</p>
+                                <p><strong>0019</strong> - Deutsche Bank</p>
+                                <p><strong>2080</strong> - Abanca</p>
+                                <p><strong>1474</strong> - Citibank</p>
+                                <p><strong>0011</strong> - Allfunds Bank</p>
+                                <p><strong>0241</strong> - A&G Banco</p>
+                                <p><strong>0220</strong> - Banco Finantia</p>
+                                <p><strong>0235</strong> - Banco Pichincha</p>
+                                <p><strong>1490</strong> - Singular Bank</p>
+                                <p><strong>1491</strong> - Triodos Bank</p>
+                                <p><strong>1508</strong> - Renault Bank</p>
+                                <p><strong>2932</strong> - Bankinter C.F.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-indigo-700 mb-2">5.2 Anatomía del Código IBAN</h4>
+                            <div class="bg-gray-100 p-4 rounded-lg font-mono text-center text-sm sm:text-base border">
+                                <span class="text-red-600">ES</span><span class="text-blue-600">XX</span> <span class="text-green-600">XXXX</span> <span class="text-purple-600">XXXX</span> <span class="text-orange-600">XX</span> <span class="text-gray-700">XXXXXXXXXX</span>
+                            </div>
+                            <ul class="mt-3 space-y-1 text-sm">
+                                <li><strong class="text-red-600">ES:</strong> Código del País.</li>
+                                <li><strong class="text-blue-600">XX:</strong> Dígitos de Control (Valida IBAN).</li>
+                                <li><strong class="text-green-600">XXXX:</strong> Código de la Entidad (Ver tabla arriba).</li>
+                                <li><strong class="text-purple-600">XXXX:</strong> Código de la Oficina.</li>
+                                <li><strong class="text-orange-600">XX:</strong> Dígitos de Control (Valida cuenta).</li>
+                                <li><strong class="text-gray-700">XXXXXXXXXX:</strong> Número de Cuenta.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-indigo-700 mb-2">5.3 El Proceso de Firma Digital</h4>
+                            <p>Es la aceptación de la política de protección de datos y el registro de las condiciones. <strong class="text-indigo-700">NO es un contrato nuevo.</strong></p>
+                            <ol class="list-decimal list-inside mt-2 space-y-1">
+                                <li>Cliente abre el enlace del SMS.</li>
+                                <li>Verá un resumen de las condiciones y la política de privacidad.</li>
+                                <li>Acepta los términos (marcando una casilla).</li>
+                                <li>"Firma" digitalmente (con un código o pulsando un botón).</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 6: Comunicación de Alto Impacto -->
+            <div class="bg-white rounded-lg shadow-md border border-gray-200">
+                <button class="accordion-button w-full text-left p-4 flex justify-between items-center text-xl font-semibold text-slate-700 hover:bg-gray-50 focus:outline-none">
+                    <div class="flex items-center">
+                        <svg class="module-icon w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-2.236 9.168-5.514C18.102 1.99 18.554 1 19.5 1h.5c.621 0 1.128.507 1.128 1.128V11M11 19h10v-6h-4v6z"></path></svg>
+                        Módulo 6: Comunicación de Alto Impacto
+                    </div>
+                    <span class="plus-icon text-slate-500 text-2xl transition-transform duration-300 transform">+</span>
+                </button>
+                <div class="accordion-content px-6 pb-6">
+                    <div class="pt-4 border-t">
+                        <p class="text-center mb-4">Las palabras que eliges definen la llamada. Proyecta seguridad y control.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <h4 class="font-bold text-red-800 flex items-center mb-2">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                                    EVITAR (Resta Confianza)
+                                </h4>
+                                <ul class="space-y-1 text-red-700">
+                                    <li>Necesito / Permítame</li>
+                                    <li>Regálame / Por favor</li>
+                                    <li>Listo</li>
+                                    <li>Si quieres o si puedes</li>
+                                    <li>Sería tan amable</li>
+                                    <li>Mucho gusto / Aló / Hola</li>
+                                    <li>Celular / Cédula</li>
+                                    <li>Si le va bien</li>
+                                    <li>Manejar / Plata</li>
+                                    <li>Ofrecer / Cancelar</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                <h4 class="font-bold text-green-800 flex items-center mb-2">
+                                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                    USAR (Proyecta Seguridad)
+                                </h4>
+                                <ul class="space-y-1 text-green-700">
+                                    <li>Dame, facilítame</li>
+                                    <li>Dictame, verifícame</li>
+                                    <li>Vale o Perfecto</li>
+                                    <li>Confírmame</li>
+                                    <li>-</li>
+                                    <li>Encantado, soy [Nombre]...</li>
+                                    <li>Móvil / DNI</li>
+                                    <li>Confírmeme</li>
+                                    <li>Llevas o gestionas / Dinero</li>
+                                    <li>Activar, actualizar / Pagar</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="mt-6 bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+                            <h4 class="font-bold text-blue-800">Principios de Oro</h4>
+                            <p class="mt-2 text-blue-700"><strong>1. Da por hecho:</strong> Usa verbos que asumen la cooperación: "Verifíqueme...", "Confírmame...", "Dame...", "Correcto...".</p>
+                            <p class="mt-2 text-blue-700"><strong>2. Ofrece solo dos opciones:</strong> Guía la decisión del cliente. Ejemplo: "¿El número de la cuenta te lo sabes de memoria o lo tienes que mirar?".</p>
+                            <p class="mt-2 text-blue-700"><strong>Recuerda:</strong> Debemos exigir con máxima confianza, educación y cortesía.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+
+            // Open the first module by default
+            const firstButton = accordionButtons[0];
+            if(firstButton) {
+                firstButton.classList.add('active');
+                firstButton.nextElementSibling.style.maxHeight = firstButton.nextElementSibling.scrollHeight + "px";
+            }
+
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const isActive = button.classList.contains('active');
+                    
+                    // Close all accordions
+                    accordionButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.nextElementSibling.style.maxHeight = null;
+                    });
+                    
+                    // Open the clicked one if it wasn't active
+                    if (!isActive) {
+                        button.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+
